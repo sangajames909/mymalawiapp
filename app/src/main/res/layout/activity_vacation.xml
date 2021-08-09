@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VacationActivity">
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="BEST HOTELS TO STAY IN"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="AMARYLLIS HOTEL"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView21"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"/>
+
+    <LinearLayout
+        android:id="@+id/linearHotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/hotel1"/>
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/gal"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="HOTEL PACKAGES"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/linearHotel"
+        app:layout_constraintStart_toStartOf="@+id/linearHotel"
+        app:layout_constraintTop_toBottomOf="@+id/linearHotel"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/accommodation"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="(1) Designer Luxury Accommodation"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearVace"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/accommodation"
+        app:layout_constraintStart_toStartOf="@+id/accommodation"
+        app:layout_constraintTop_toBottomOf="@+id/accommodation">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deluxe King Room:
+            Enjoy expansive views from the comfort of your personal open-air lounge. Conveniently located on
+the pool level, just steps from our Splash Bistro."
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:drawableTop="@drawable/deluxe"
+            android:layout_weight="1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presidential Suites:
+             Beyond outstanding views and an expansive private entertainment deck, you can enjoy a quiet environment while surrounded by luxurious services and amenities
+to make the most of your stay, be it corporate or leisure."
+            android:textColor="#000"
+            android:drawableTop="@drawable/presidential"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(2) Dinning Options"
+        android:id="@+id/dinning"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearVace"
+        app:layout_constraintStart_toStartOf="@+id/linearVace"
+        app:layout_constraintTop_toBottomOf="@+id/linearVace"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/linearWeight"
+        app:layout_constraintEnd_toEndOf="@+id/dinning"
+        app:layout_constraintStart_toStartOf="@+id/dinning"
+        app:layout_constraintTop_toBottomOf="@+id/dinning">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dining @ Zaffron Restaurant:
+Indian Fusion Cuisine of the highest quality and standards - using the freshest of ingredients."
+            android:textColor="#000"
+            android:drawableTop="@drawable/zaffron"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dining @ Splash Rooftop Restaurant:
+Panoramic Views- Relaxing Atmosphere near the Swimming Pool make this an ideal setting for a sundowner or tasty casual meal."
+            android:textColor="#000"
+            android:drawableTop="@drawable/rooftop"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/linearText"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearWeight"
+        app:layout_constraintStart_toStartOf="@+id/linearWeight"
+        app:layout_constraintTop_toBottomOf="@+id/linearWeight">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/coffee"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:text="All-day Dining @ Coffee Cup:
+Come and enjoy an amazing atmosphere will sipping on the finest warm beverages      in Blantyre city. Coffee Cup also offers a wide variety of healthy snacks and beverages. "
+            android:textColor="#000"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(3) Conferences"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:id="@+id/conference"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/linearText"
+        app:layout_constraintStart_toStartOf="@+id/linearText"
+        app:layout_constraintTop_toBottomOf="@+id/linearText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/conferencePara"
+        android:text="@string/conference"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/conference"
+        app:layout_constraintStart_toStartOf="@+id/conference"
+        app:layout_constraintTop_toBottomOf="@+id/conference"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/linearConference"
+        app:layout_constraintEnd_toEndOf="@+id/conferencePara"
+        app:layout_constraintStart_toStartOf="@+id/conferencePara"
+        app:layout_constraintTop_toBottomOf="@+id/conferencePara">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEETINGS:
+ Privacy and Service of the highest level guaranteed.
+High tech conference aids, such as conference calling available."
+            android:textColor="#000"
+            android:padding="4dp"
+            android:drawableTop="@drawable/meet"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRIVATE DINNING:
+ Top class cuisine, facilities &amp; service make Amaryllis Hotel your preferred Banquet or Wedding Destination "
+            android:textColor="#000"
+            android:padding="4dp"
+            android:drawableTop="@drawable/dinning"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/linearButton"
+        app:layout_constraintEnd_toEndOf="@+id/linearConference"
+        app:layout_constraintStart_toStartOf="@+id/linearConference"
+        app:layout_constraintTop_toBottomOf="@+id/linearConference">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/weddings"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEDDINGS:
+We love hosting these magical events in our collection of wonderful venues and half crafted celebrations from parties to honeymoons. "
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to see next hotel"
+        android:textAllCaps="false"
+        android:id="@+id/buttonNext"
+        android:background="#C10F0F"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearButton"
+        app:layout_constraintStart_toStartOf="@+id/linearButton"
+        app:layout_constraintTop_toBottomOf="@+id/linearButton"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

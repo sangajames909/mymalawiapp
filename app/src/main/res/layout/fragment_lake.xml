@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".LakeFragment">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="MULANJE MOUNTAIN"
+        android:textStyle="italic"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:layout_margin="15dp"
+        android:text="Mulanje, formerly called Mlanje, is a town in the Southern Region of Malawi, close to the border with Mozambique, to the east. It is near the Mulanje Massif.[2]"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/mount" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/mulanje" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="Location:"
+        android:textStyle="italic"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="@string/mount"
+        android:textColor="#000"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAKES"
+        android:id="@+id/lAKES"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/lakemw"
+       android:text="@string/lake"
+       android:textColor="#000"
+       android:layout_marginTop="5dp"
+       android:padding="5dp"
+       android:textAlignment="center"
+       app:layout_constraintEnd_toEndOf="@+id/lAKES"
+       app:layout_constraintHorizontal_bias="0.501"
+       app:layout_constraintStart_toStartOf="@+id/lAKES"
+       app:layout_constraintTop_toBottomOf="@+id/lAKES"
+       android:gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLake"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/lakemw"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/lakemw"
+        app:layout_constraintTop_toBottomOf="@+id/lakemw">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/lakemw"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/mwlake"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NATIONAL PARKS"
+        android:textColor="#000"
+        android:textStyle="italic"
+        android:id="@+id/national"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLake"
+        app:layout_constraintStart_toStartOf="@+id/linearLake"
+        app:layout_constraintTop_toBottomOf="@+id/linearLake"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/national"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:id="@+id/parks"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/national"
+        app:layout_constraintStart_toStartOf="@+id/national"
+        app:layout_constraintTop_toBottomOf="@+id/national"
+        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/linearImage"
+        app:layout_constraintEnd_toEndOf="@+id/parks"
+        app:layout_constraintStart_toStartOf="@+id/parks"
+        app:layout_constraintTop_toBottomOf="@+id/parks"
+        >
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/parks"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/natioanl"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BEACHES"
+        android:id="@+id/beach"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/linearImage"
+        app:layout_constraintStart_toStartOf="@+id/linearImage"
+        app:layout_constraintTop_toBottomOf="@+id/linearImage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beach"
+        android:textColor="#000"
+        android:id="@+id/textBeach"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/beach"
+        app:layout_constraintStart_toStartOf="@+id/beach"
+        app:layout_constraintTop_toBottomOf="@+id/beach"
+        android:gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/textBeach"
+        app:layout_constraintStart_toStartOf="@+id/textBeach"
+        app:layout_constraintTop_toBottomOf="@+id/textBeach">
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/beach1"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/beachhouse"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

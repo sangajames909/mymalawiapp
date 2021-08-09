@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="History"
+        android:id="@+id/nav_history"
+        android:icon="@drawable/history"/>
+    <item
+        android:title="Culture"
+        android:id="@+id/nav_culture"
+        android:icon="@drawable/culture" />
+    <item
+        android:title="Entertainment and Tourism"
+        android:id="@+id/nav_entertain"
+       android:icon="@drawable/entertain"/>
+    <item android:title="Where to stay &amp; What to do.">
+        <menu>
+            <item
+                android:title="Vacation"
+                android:id="@+id/nav_vacation"
+                android:icon="@drawable/relax" />
+            <item
+                android:title="What to do"
+                android:id="@+id/nav_what"
+                android:icon="@drawable/vacation"/>
+        </menu>
+    </item>
+</menu>

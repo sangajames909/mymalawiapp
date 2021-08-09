@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SunbirdMountSoche">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="SUNBIRD MOUNT SOCHE HOTEL"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/gold"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/mountsoche" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/mountsoche1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ACCOMMODATION"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rooms"
+        android:fontFamily="cursive"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/textView26"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rooms are en suite, air-conditioned, have digital satellite television, international direct dialing, Wi-Fi internet, email facilities and 220 volts power points (British standard)."
+        android:textColor="#000"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView27"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="2"
+        android:id="@+id/linearMount"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView28">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/mountdeluxe1"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="(1)Deluxe Room:
+This air-conditioned room offering a view features a flat-screen TV, a minibar and a private bathroom.
+
+ Guests 2
+ 1 Double Bed
+ Room Size 25m2 TV
+Telephone"
+           android:textColor="#000"
+           android:layout_weight="1"
+           android:layout_margin="10dp"
+           android:padding="5dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/linearSuite"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearMount"
+        app:layout_constraintStart_toStartOf="@+id/linearMount"
+        app:layout_constraintTop_toBottomOf="@+id/linearMount">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/mountsochestudioroom2"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(2)Studio Room:
+This double room features a electric kettle, soundproofing and tile/marble floor.
+
+ Guests 2
+ 1 Full Double Bed
+ Room Size 25m2
+ TV
+ Telephone"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/linearExective"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearSuite"
+        app:layout_constraintStart_toStartOf="@+id/linearSuite"
+        app:layout_constraintTop_toBottomOf="@+id/linearSuite">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/mountsochesuiteroom1"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="(3)Executive Suite Room:
+This double room features a electric kettle, soundproofing and carpeted floors.
+
+ Guests 2
+ 1 Large Double Bed
+ Room Size 30m2
+ TV
+ Telephone"
+            android:textColor="#000"
+            android:padding="5dp"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESTUARANT &amp; BARS"
+        android:id="@+id/textBars"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/linearExective"
+        app:layout_constraintStart_toStartOf="@+id/linearExective"
+        app:layout_constraintTop_toBottomOf="@+id/linearExective"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearBars"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/textBars"
+        app:layout_constraintStart_toStartOf="@+id/textBars"
+        app:layout_constraintTop_toBottomOf="@+id/textBars">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/mountsochepicassorestuarant1"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:text="(1)Picasso’s Restaurant:
+Picasso’s Brasserie and Grill is an elegant restaurant offering the best of local and international cuisine in both a la carte and buffet settings. A host of specials includes our business lunches served three days a week and traditional lunches served on Wednesdays and Fridays. Picasso also has a private dining room for a more intimate dining experience."/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearPablo"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearBars"
+        app:layout_constraintStart_toStartOf="@+id/linearBars"
+        app:layout_constraintTop_toBottomOf="@+id/linearBars">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/pablo"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:text="(2)Pablo’s Lounge Bar:
+Pablo’s is a cosy, executive bar &amp; lounge, richly decorated and furnished, offering a wealth of local and imported beverages. Pablo’s is also wellknown for its range of alcoholic and non-alcoholic cocktails to be enjoyed in the lounge bar or on its stylish patio overlooking Mount Soche’s scenic gardens facing across the valley to Nyambadwe and Ndirande."/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearSports"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearPablo"
+        app:layout_constraintStart_toStartOf="@+id/linearPablo"
+        app:layout_constraintTop_toBottomOf="@+id/linearPablo">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/sports"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:text="(3)Sportsman’s Bar:
+Sportsman’s is a newly refurbished modern and authentic sports bar that catches the spirit of sports and fun while offering a wide range of beverages. The bar has four high-definition widescreen television sets to ensure you catch the game from every corner. A snack bar offers a wide range of delicious Malawian snacks."/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTIVITES &amp; EXPERIENCES"
+        android:textColor="#000"
+        android:id="@+id/textActivity"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/linearSports"
+        app:layout_constraintStart_toStartOf="@+id/linearSports"
+        app:layout_constraintTop_toBottomOf="@+id/linearSports"/>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:layout_marginTop="5dp"
+    android:id="@+id/linearActivity"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="@+id/textActivity"
+    app:layout_constraintStart_toStartOf="@+id/textActivity"
+    app:layout_constraintTop_toBottomOf="@+id/textActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/chawe"
+        android:layout_weight="1"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="(1)Ku Chawe Excursion:
+The most popular excursion arranged by the hotel is just over an hour away to the 2200m, 7000ft Zomba plateau. Lunch is enjoyed on the cool terraces of Sunbird Ku Chawe, perched high above the country’s historic first capital."
+        android:textColor="#000"
+        android:padding="5dp"
+        android:layout_margin="10dp"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/linearActivity1"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearActivity"
+        app:layout_constraintStart_toStartOf="@+id/linearActivity"
+        app:layout_constraintTop_toBottomOf="@+id/linearActivity">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/tea"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="(2)Tea Estate Excursion:
+The vivid greenery of the Thyolo and Mulanje tea estates is also about an hour away on a lovely scenic road through scenery more reminiscent of Scotland than Africa itself. Mulanje Mountain, a World Heritage site, now promoted as ‘the island in the sky’ offers thrilling opportunities for hiking and climbing on Central Africa’s highest peak."
+            android:textColor="#000"
+            android:padding="5dp"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/linearActivity2"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearActivity1"
+        app:layout_constraintStart_toStartOf="@+id/linearActivity1"
+        app:layout_constraintTop_toBottomOf="@+id/linearActivity1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/natioanl"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="(3)National Parks
+The nearest parks and reserves are Lengwe National Park and Majete Wildlife Reserve. Elephant, lion and other ‘Big Five’ species have been very successfully re-introduced in Majete. Sunbird Mount Soche can arrange for a day or a weekend excursion including transfers, meals and accommodation."
+            android:textColor="#000"
+            android:padding="5dp"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearActivity2"
+        app:layout_constraintStart_toStartOf="@+id/linearActivity2"
+        app:layout_constraintTop_toBottomOf="@+id/linearActivity2">
+       <androidx.appcompat.widget.AppCompatButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_margin="5dp"
+           android:textAllCaps="false"
+           android:padding="4dp"
+           android:id="@+id/appBtn"
+           android:text="Click here to see more hotels"
+           android:background="#43A047"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnApp"
+            android:padding="4dp"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"
+            android:text="Click here to chose your hotel"
+            android:background="#075DA8"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

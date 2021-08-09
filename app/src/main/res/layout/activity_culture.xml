@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CultureActivity">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="TRIBES"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="@string/tribes"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"/>
+
+        <LinearLayout
+            android:id="@+id/layoutLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/ngoni"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/chewa"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutLinear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="@+id/layoutLinear"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/layoutLinear"
+            app:layout_constraintTop_toBottomOf="@+id/layoutLinear">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/kaya" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/yao"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOOD"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/layoutLinear2"
+            app:layout_constraintStart_toStartOf="@+id/layoutLinear2"
+            app:layout_constraintTop_toBottomOf="@+id/layoutLinear2"/>
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="@string/food"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/food"
+            app:layout_constraintStart_toStartOf="@+id/food"
+            app:layout_constraintTop_toBottomOf="@+id/food"/>
+
+        <TextView
+            android:id="@+id/include"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:text="POPULAR DISHES INCLUDE:"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/txt"
+            app:layout_constraintStart_toStartOf="@+id/txt"
+            app:layout_constraintTop_toBottomOf="@+id/txt"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="Chambo: A fish from Lake Malawi, Chambo is Tilapia fish and is considered a delicacy. Other favourite fish include usipa, which is similar to sardines, and mpasa, which is similar to salmon."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/include"
+            app:layout_constraintStart_toStartOf="@+id/include"
+            app:layout_constraintTop_toBottomOf="@+id/include"/>
+
+        <TextView
+            android:id="@+id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Nsima: This is a staple of Malawi food. It is made from ground corn and served with side dishes of meat or vegetables. People in Malawi can eat this for breakfast, lunch and dinner."
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+        <LinearLayout
+            android:id="@+id/layoutLinear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="@+id/center"
+            app:layout_constraintStart_toStartOf="@+id/center"
+            app:layout_constraintTop_toBottomOf="@+id/center">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/food"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/sav"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textCulture"
+            android:text="Cultural Places to visit:"
+            android:textStyle="italic"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="@+id/layoutLinear3"
+            app:layout_constraintStart_toStartOf="@+id/layoutLinear3"
+            app:layout_constraintTop_toBottomOf="@+id/layoutLinear3"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearCulture"
+            android:weightSum="2"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/textCulture"
+            app:layout_constraintStart_toStartOf="@+id/textCulture"
+            app:layout_constraintTop_toBottomOf="@+id/textCulture">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Blantyre &amp; Limbe"
+                android:textColor="#000"
+                android:id="@+id/blantyre"
+                android:drawableTop="@drawable/blantyre"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chintheche"
+                android:layout_weight="1"
+                android:id="@+id/chintheche"
+                android:textColor="#000"
+                android:drawableTop="@drawable/chintheche"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textLinear"
+            android:text="Other Experiences"
+            android:textColor="#000"
+            android:padding="2dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/linearCulture"
+            app:layout_constraintStart_toStartOf="@+id/linearCulture"
+            app:layout_constraintTop_toBottomOf="@+id/linearCulture"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearhorizontal"
+            android:weightSum="2"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/textLinear"
+            app:layout_constraintStart_toStartOf="@+id/textLinear"
+            app:layout_constraintTop_toBottomOf="@+id/textLinear">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Landscape"
+                android:id="@+id/landscape"
+                android:drawableTop="@drawable/landscape"
+                android:layout_margin="10dp"
+                android:textColor="#000"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Museums &amp; Historical Sites"
+                android:id="@+id/museum"
+                android:textColor="#000"
+                android:drawableTop="@drawable/museum"
+                android:layout_margin="10dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

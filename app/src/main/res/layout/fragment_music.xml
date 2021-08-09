@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicFragment">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Music In Malawi"
+        android:textColor="#000"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/underline"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Some of the Malawian artist"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:id="@+id/linearMusic"
+        app:layout_constraintEnd_toEndOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saint"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/saint"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FredoKiss"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:drawableTop="@drawable/fredo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toast"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:drawableTop="@drawable/toast"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMusic"
+        android:text="Click here for more music"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearMusic"
+        app:layout_constraintStart_toStartOf="@+id/linearMusic"
+        app:layout_constraintTop_toBottomOf="@+id/linearMusic"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
